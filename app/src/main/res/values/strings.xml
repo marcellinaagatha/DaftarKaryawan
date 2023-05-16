@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DaftarKaryawan</string>
+    <string name="selected_item">SelectedItem</string>
+    <string-array name="Jabatan">
+        <item>Kepala Toko</item>
+        <item>Karyawan tetap</item>
+        <item>Karyawan Magang</item>
+    </string-array>
+</resources>

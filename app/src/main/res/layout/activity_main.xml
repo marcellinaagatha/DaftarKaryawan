@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/whiteColor">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/m_img_1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellcome Broo!!"
+        android:layout_below="@+id/m_img_1"
+        android:id="@+id/text_wellcome"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/blackColor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_wellcome"
+        android:text="Let's help you meet up your tasks.!"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/blackColor"
+        android:id="@+id/text_help"/>
+
+    <LinearLayout
+        android:id="@+id/ly_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_help"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:id="@+id/nama"
+            android:hint="Masukkan Nama"
+            android:background="@drawable/button_2"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textPersonName"
+            android:ems="10"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:id="@+id/nip"
+            android:hint="Masukkan NIP"
+            android:background="@drawable/button_2"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Jenis Kelamin "
+            android:background="@drawable/button_2"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingLeft="10dp"
+            android:textSize="20dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:id="@+id/jkel">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbPria"
+                android:layout_marginHorizontal="8dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:text="Laki-Laki"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbWanita"
+                android:layout_marginHorizontal="8dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Jabatan"
+            android:background="@drawable/button_2"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:id="@+id/jabatan"/>
+
+        <Spinner
+            android:id="@+id/spinnerJB"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/whiteColor"/>
+
+            <Button
+                android:id="@+id/show_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LIHAT DATA"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/whiteColor"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/whiteColor"/>
+    </LinearLayout>
+
+</RelativeLayout>
